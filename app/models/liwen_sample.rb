@@ -1,2 +1,0 @@
-class LiwenSample < ApplicationRecord
-end
