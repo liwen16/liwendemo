@@ -1,0 +1,2 @@
+module LiwentestsHelper
+end

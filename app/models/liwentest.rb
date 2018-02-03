@@ -1,0 +1,2 @@
+class Liwentest < ApplicationRecord
+end
