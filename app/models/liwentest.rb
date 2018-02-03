@@ -1,2 +1,0 @@
-class Liwentest < ApplicationRecord
-end
