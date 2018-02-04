@@ -2,11 +2,11 @@
 <%= form_for @post do |f| %>
 <p>
   <%= f.label :title %>
-  <%= f.text_field  :title %>
+  <%= f.text_field :title %>
 </p>
 <p>
   <%= f.label :body %>
-  <%= f.text_area  :body %>
+  <%= f.text_area :body %>
 </p>
 <p>
   <%= f.select :category_id,  Category.all.collect  {|x| [x.name, x.id, {:include_blank  => "Select One"}]} %>
@@ -15,4 +15,4 @@
   <%= f.submit "update now" %>
 </p>
 <% end %>
-<%= link_to 'Back', category_path %>
+<%= link_to 'Back', posts_path %>
