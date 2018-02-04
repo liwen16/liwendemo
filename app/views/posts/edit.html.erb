@@ -6,9 +6,11 @@
 </p>
 <p>
   <%= f.label :body %>
-  <%= f.text_field  :body %>
+  <%= f.text_area  :body %>
 </p>
-
+<p>
+  <%= f.select :category_id,  Category.all.collect  {|x| [x.name, x.id, {:include_blank  => "Select One"}]} %>
+</p>
 <p>
   <%= f.submit "update now" %>
 </p>

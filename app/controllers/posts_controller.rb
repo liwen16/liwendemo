@@ -1,31 +1,36 @@
 class PostsController < ApplicationController
     def index
-      @post  =  Post.all
-      @category = Category.all
+      @posts  =  Post.all
     end
 
     def show
       @post = Post.find(params[:id])
+      @category =  Category.all
     end
 
     def new
       @post = Post.new
+      @category = Category.all
     end
 
     def edit
       @post = Post.find(params[:id])
+      #@category = Category.all
     end
 
     def create
       @post = Post.new(post_params)
-      @post.save
-      redirect_to @post
+      if @post.save
+        redirect_to posts_path, :notice => "Your post has been saved"
+      else
+        render "new"
+      end
     end
 
     def update
       @post = Post.find(params[:id])
       if @post.update(post_params)
-        redirect_to @post
+        redirect_to @post , :notice => "Your phost has been updated"
       else
         render 'edit'
       end
@@ -38,13 +43,7 @@ class PostsController < ApplicationController
     end
 
     private
-      # Use callbacks to share common setup or constraints between actions.
-      def set_post
-        @post = Post.find(params[:id])
-      end
-
-      # Never trust parameters from the scary internet, only allow the white list through.
       def post_params
-        params.require(:post).permit(:name)
+        params.require(:post).permit(:title, :body, :category_id)
       end
   end
