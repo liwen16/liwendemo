@@ -1,6 +1,5 @@
 class Post < ApplicationRecord
-  attr_accessor :name, :body, :category_id
-  belongs_to :category
+  has_many :posts_path
 
-  validate :name, :body, :category_id
+  validate :title, :body, :category_id
 end
