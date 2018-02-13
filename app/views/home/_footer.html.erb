@@ -1,0 +1,38 @@
+<footer>
+   <div class="line">
+      <div class="s-12 l-6">
+         <p>Copyright 2017, Vision Design - graphic zoo</p>
+         <p>All images have been purchased from Bigstock. Do not use the images in your website.</p>
+      </div>
+      <div class="s-12 l-6">
+         <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
+      </div>
+   </div>
+</footer>
+<!--  %= javascript_include_tag 'application.js', 'data-turbolinks-track': 'reload' %-->
+<%= javascript_include_tag "responsee", "data-turbolinks-track" => true  %>
+<%= javascript_include_tag "owl-carousel/owl-carousel", "data-turbolinks-track" => true  %>
+
+<script type="text/javascript">
+   jQuery(document).ready(function($) {
+      var theme_slider = $("#owl-demo");
+      $("#owl-demo").owlCarousel({
+          navigation: false,
+          slideSpeed: 300,
+          paginationSpeed: 400,
+          autoPlay: 6000,
+          addClassActive: true,
+       // transitionStyle: "fade",
+          singleItem: true
+      });
+      // Custom Navigation Events
+      $(".next-arrow").click(function() {
+          theme_slider.trigger('owl.next');
+      })
+      $(".prev-arrow").click(function() {
+          theme_slider.trigger('owl.prev');
+      })
+  });
+</script>
+</body>
+</html>
