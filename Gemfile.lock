@@ -188,6 +188,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 5.0)
   selenium-webdriver
+  sprockets
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
