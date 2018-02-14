@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   #get 'welcome/index'
   #root 'welcome#index'
   #get'/index'
+  resources :emails
   root 'home#index'
 end

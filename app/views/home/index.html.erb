@@ -115,10 +115,10 @@
                     <a class="tab-label active-btn">Web Design</a>
                     <div class="tab-content">
                       <div class="margin">
-                        <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><%= image_tag("por1.jpg") %></div>
-                        <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><%= image_tag("por4.jpg") %></div>
-                        <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><%= image_tag("por6.jpg") %></div>
-                        <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><%= image_tag("por3.jpg") %></div>
+                        <div class="s-12 m-6 l-3"><a class=""><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><%= image_tag("por1.jpg") %></div>
+                        <div class="s-12 m-6 l-3"><a class=""><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><%= image_tag("por4.jpg") %></div>
+                        <div class="s-12 m-6 l-3"><a class=""><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><%= image_tag("por6.jpg") %></div>
+                        <div class="s-12 m-6 l-3"><a class=""><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><%= image_tag("por3.jpg") %></div>
                       </div>
                     </div>
                   </div>
@@ -145,7 +145,7 @@
                     </div>
                   </div>
                   <div class="tab-item">
-                    <a class="tab-label">Photography</a>
+                    <a class="tab-label">Photographys</a>
                     <div class="tab-content">
                       <div class="margin">
                         <div class="s-12 m-6 l-3"><a class="our-work-container lightbox margin-bottom"><div class="our-work-text"><h4>Lorem Ipsum Dolor</h4><p>Laoreet dolore magna aliquam erat volutpat.</p></div><%= image_tag("por7.jpg") %></a></div>
@@ -244,13 +244,34 @@
                   </div>
                   <div class="s-12 m-12 l-5">
                     <h3>Example contact form (do not use)</h3>
-                    <form class="customform" action="">
-                      <div class="s-12"><input name="" placeholder="Your e-mail" title="Your e-mail" type="text" /></div>
-                      <div class="s-12"><input name="" placeholder="Your name" title="Your name" type="text" /></div>
-                      <div class="s-12"><textarea placeholder="Your message" name="" rows="5"></textarea></div>
-                      <div class="s-12 m-12 l-4"><button class="color-btn" type="submit">Submit Button</button></div>
-                    </form>
-                  </div>
+                    <%= form_tag("/emails", method: "post" , action:"create", class: "customform") do %>
+                      <div class="s-12">
+                        <%= label_tag(:email, "Your Email:") %>
+                        <%= text_field_tag(:email) %>
+                      </div>
+                      <div class="s-12">
+                        <%= label_tag(:name, "Your Name:") %>
+                        <%= text_field_tag(:name) %>
+                      </div>
+                      <div class="s-12">
+                        <%= label_tag(:Message, "Message:") %>
+                        <%= text_area_tag(:message) %>
+                      </div>
+                      <div class="s-12 m-12 l-4">
+                        <%= submit_tag("Submit", :class => 'color-btn') %>
+                      </div>
+                    <% end %>
+                      <div class="s-12">
+                        <% @list_contacts.each do |list_contact| %>
+                        <ul class="list-contact">
+                          <li><%= list_contact.email %></li>
+                          <li><%= list_contact.name %></li>
+                          <li><%= list_contact.message %></li>
+                          <li><%= link_to 'Delete', email_path(list_contact.id), action: "delete", data:{confirm: 'Are you certain???'}%></li>
+                        </ul>
+                        <% end %>
+                      </div>
+                    </div>
                </div>
             </div>
          </div>
@@ -260,41 +281,3 @@
          </div>
       </section>
       <!-- FOOTER -->
-      <footer>
-         <div class="line">
-            <div class="s-12 l-6">
-               <p>Copyright 2017, Vision Design - graphic zoo</p>
-               <p>All images have been purchased from Bigstock. Do not use the images in your website.</p>
-            </div>
-            <div class="s-12 l-6">
-               <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
-            </div>
-         </div>
-      </footer>
-    <!--  %= javascript_include_tag 'application.js', 'data-turbolinks-track': 'reload' %-->
-    <%= javascript_include_tag "responsee", "data-turbolinks-track" => true  %>
-    <%= javascript_include_tag "owl-carousel/owl-carousel", "data-turbolinks-track" => true  %>
-
-      <script type="text/javascript">
-         jQuery(document).ready(function($) {
-            var theme_slider = $("#owl-demo");
-            $("#owl-demo").owlCarousel({
-                navigation: false,
-                slideSpeed: 300,
-                paginationSpeed: 400,
-                autoPlay: 6000,
-                addClassActive: true,
-             // transitionStyle: "fade",
-                singleItem: true
-            });
-            // Custom Navigation Events
-            $(".next-arrow").click(function() {
-                theme_slider.trigger('owl.next');
-            })
-            $(".prev-arrow").click(function() {
-                theme_slider.trigger('owl.prev');
-            })
-        });
-      </script>
-      </body>
-      </html>
