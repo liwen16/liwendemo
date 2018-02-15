@@ -16,6 +16,6 @@ Rails.application.routes.draw do
   resources :emails
   resources :home
   match '/', to: 'home#index',via: [:get, :post]
-  match '/favicon.ico', to: 'favicons#index',via: [:get, :post]
+  match '/favicon.ico', to: 'home#index',via: [:get, :post]
   root 'home#index'
 end
