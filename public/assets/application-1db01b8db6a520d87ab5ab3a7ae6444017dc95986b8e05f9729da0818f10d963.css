@@ -1,0 +1,5171 @@
+/*
+ * Components CSS - v4 - 2016-07-08
+ * https://www.myresponsee.com
+ * Copyright 2016, Vision Design - graphic zoo
+ * Free to use under the MIT license.
+*/
+/* Tabs */
+
+.tab-item {
+  background: none repeat scroll 0 0 #fff;
+  display: none;
+  padding: 1.25rem 0;
+}
+.tab-item.tab-active {
+  display: block;
+}
+.tab-content > .tab-label {
+  display: none;
+}
+.tab-nav > .tab-label {
+  float:left;
+}
+a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover {
+  background: none repeat scroll 0 0 #262626;
+  color: #fff;
+  margin-right: 1px;
+  padding: 0.625rem 1.25rem;
+  transition: background 0.20s linear 0s;
+  -o-transition: background 0.20s linear 0s;
+  -ms-transition: background 0.20s linear 0s;
+  -moz-transition: background 0.20s linear 0s;
+  -webkit-transition: background 0.20s linear 0s;
+}
+a.tab-label:hover,a.tab-label.active-btn {
+  background: none repeat scroll 0 0 #999;
+}
+.tab-label.active-btn {
+  cursor: default;
+}
+.tab-content {
+  text-align: left;
+}
+@media screen and (max-width:768px) {    
+  .tab-nav > .tab-label {
+    margin: 0.5px 0;
+    width: 100%;
+  }
+}
+/* Custom forms */
+form.customform input, form.customform select, form.customform textarea, form.customform button {
+ font-size:0.9rem;
+ font-family:inherit;
+ margin-bottom:1.25rem;
+} 
+form.customform input, form.customform select {height: 2.7rem;}
+form.customform input, form.customform textarea, form.customform select { 
+ background: none repeat scroll 0 0 #F5F5F5;
+ transition: background 0.20s linear 0s;
+ -o-transition: background 0.20s linear 0s;
+ -ms-transition: background 0.20s linear 0s;
+ -moz-transition: background 0.20s linear 0s;
+ -webkit-transition: background 0.20s linear 0s;
+}
+form.customform input:hover, form.customform textarea:hover, form.customform select:hover, form.customform input:focus, form.customform textarea:focus, form.customform select:focus {background: none repeat scroll 0 0 #fff;}
+form.customform input, form.customform textarea, form.customform select {
+ background: none repeat scroll 0 0 #F5F5F5;
+ border: 1px solid #E0E0E0;
+ padding: 0.625rem;
+ width: 100%;
+}
+form.customform input[type="file"] {
+ border: 1px solid #E0E0E0;
+ height: auto;
+ max-height: 2.7rem;
+ min-height: 2.7rem;
+ padding: 0.4rem;
+ width: 100%;
+}
+form.customform input[type="radio"], form.customform input[type="checkbox"] {
+ margin-right: 0.625rem;
+ width:auto;
+ padding:0;
+ height:auto;
+}
+form.customform option {padding: 0.625rem;}
+form.customform select[multiple="multiple"] {height: auto;}
+form.customform button {
+ width: 100%;
+ background: none repeat scroll 0 0 #152732;
+ border: 0 none;
+ color: #fff;
+ height: 2.7rem;
+ padding: 0.625rem;
+ cursor:pointer;
+ width: 100%;
+ transition: background 0.20s linear 0s;
+ -o-transition: background 0.20s linear 0s;
+ -ms-transition: background 0.20s linear 0s;
+ -moz-transition: background 0.20s linear 0s;
+ -webkit-transition: background 0.20s linear 0s;
+}
+/* Tooltip */
+a.tooltip-container,.tooltip-container {
+  border-bottom:1px dotted;
+  border-bottom-color: color;
+  cursor: help;
+  font-weight: 600;
+}
+a .tooltip-content,.tooltip-content {
+  background: #152732 none repeat scroll 0 0;
+  color: #fff!important;
+  border-radius: 3px;
+  display: none;
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 1.3rem;
+  margin-top: -1.25rem;
+  max-width: 300px;
+  padding: 0.625rem;
+  position: absolute;
+  z-index: 10;
+}
+.tooltip-content::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 7px solid #152732;
+  bottom: -5px;
+  clear: both;
+  content: "";
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+a.tooltip-content.tooltip-bottom,.tooltip-content.tooltip-bottom {
+  margin-top: 1.25rem;
+}
+.tooltip-content.tooltip-bottom::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 0;
+  border-bottom: 7px solid #152732;
+  top: -5px;
+}
+/* Buttons */
+.button,a.button,a.button:link,a.button:active,a.button:visited {
+  background: #777 none repeat scroll 0 0;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 0.825rem 1rem;
+  text-align: center;
+  transition: all 0.20s linear 0s;
+  -o-transition: all 0.20s linear 0s;
+  -ms-transition: all 0.20s linear 0s;
+  -moz-transition: all 0.20s linear 0s;
+  -webkit-transition: all 0.20s linear 0s;
+}
+.button.rounded-btn {
+  border-radius: 4px;
+}
+.button.rounded-full-btn {
+  border-radius: 100px;
+}
+.button:hover {box-shadow: 0 0 10px 100px rgba(255,255,255,0.15) inset;}
+.button.secondary-btn,a.button.secondary-btn,a.button.secondary-btn:link,a.button.secondary-btn:active,a.button.secondary-btn:visited {
+  background: #444 none repeat scroll 0 0;
+}
+.button.cancel-btn,a.button.cancel-btn,a.button.cancel-btn:link,a.button.cancel-btn:active,a.button.cancel-btn:visited {
+  background: #dc003a none repeat scroll 0 0;
+}
+.button.submit-btn,a.button.submit-btn,a.button.submit-btn:link,a.button.submit-btn:active,a.button.submit-btn:visited {
+  background: #b4bf04 none repeat scroll 0 0;
+}
+.button.reload-btn,a.button.reload-btn,a.button.reload-btn:link,a.button.reload-btn:active,a.button.reload-btn:visited {
+  background: #ff9800 none repeat scroll 0 0;
+}
+.button.disabled-btn {
+  cursor: not-allowed!important;
+  opacity: 0.2;
+}
+.button i {
+  background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+  border-radius: 27px;
+  color: #fff!important;
+  display: inline-block;
+  font-size: 0.8rem;
+  height: 27px;
+  line-height: 27px;
+  margin-right: 5px;
+  width: 27px;
+  transition: all 0.20s linear 0s;
+  -o-transition: all 0.20s linear 0s;
+  -ms-transition: all 0.20s linear 0s;
+  -moz-transition: all 0.20s linear 0s;
+  -webkit-transition: all 0.20s linear 0s;
+}
+.button:hover > i {
+  background: rgba(0, 0, 0, 0.06) none repeat scroll 0 0;
+}
+/* Icon font - MFG labs */
+@font-face {
+  font-family: 'mfg';
+  src: url(/assets/mfglabsiconset-webfont-68091fe3e3e198f172abbd5a17e79f69dc15621403a5956a0a4a4fb479cc1bb2.eot);
+  src: url(/assets/mfglabsiconset-webfont-6c26fc633f9eedf33d9ce8bbf43bff7864d07ff388363a03ae057d41b376445e.svg#mfg_labs_iconsetregular) format("svg"), url(/assets/mfglabsiconset-webfont-68091fe3e3e198f172abbd5a17e79f69dc15621403a5956a0a4a4fb479cc1bb2.eot?#iefix) format("embedded-opentype"), url(/assets/mfglabsiconset-webfont-990f62ca04af38464316578cdc0a0ac562f3ab2da604f2458a18aa3b11bdee9e.woff) format("woff"), url(/fonts/font/mfglabsiconset-webfont.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 14, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-cloud,
+.icon-at,
+.icon-plus,
+.icon-minus,
+.icon-arrow_up,
+.icon-arrow_down,
+.icon-arrow_right,
+.icon-arrow_left,
+.icon-chevron_down,
+.icon-chevron_up,
+.icon-chevron_right,
+.icon-chevron_left,
+.icon-reorder,
+.icon-list,
+.icon-reorder_square,
+.icon-reorder_square_line,
+.icon-coverflow,
+.icon-coverflow_line,
+.icon-pause,
+.icon-play,
+.icon-step_forward,
+.icon-step_backward,
+.icon-fast_forward,
+.icon-fast_backward,
+.icon-cloud_upload,
+.icon-cloud_download,
+.icon-data_science,
+.icon-data_science_black,
+.icon-globe,
+.icon-globe_black,
+.icon-math_ico,
+.icon-math,
+.icon-math_black,
+.icon-paperplane_ico,
+.icon-paperplane,
+.icon-paperplane_black,
+.icon-color_balance,
+.icon-star,
+.icon-star_half,
+.icon-star_empty,
+.icon-star_half_empty,
+.icon-reload,
+.icon-heart,
+.icon-heart_broken,
+.icon-hashtag,
+.icon-reply,
+.icon-retweet,
+.icon-signin,
+.icon-signout,
+.icon-download,
+.icon-upload,
+.icon-placepin,
+.icon-display_screen,
+.icon-tablet,
+.icon-smartphone,
+.icon-connected_object,
+.icon-lock,
+.icon-unlock,
+.icon-camera,
+.icon-isight,
+.icon-video_camera,
+.icon-random,
+.icon-message,
+.icon-discussion,
+.icon-calendar,
+.icon-ringbell,
+.icon-movie,
+.icon-mail,
+.icon-pen,
+.icon-settings,
+.icon-measure,
+.icon-vector,
+.icon-vector_pen,
+.icon-mute_on,
+.icon-mute_off,
+.icon-home,
+.icon-sheet,
+.icon-arrow_big_right,
+.icon-arrow_big_left,
+.icon-arrow_big_down,
+.icon-arrow_big_up,
+.icon-facebook_circle,
+.icon-dribbble_circle,
+.icon-dribbble,
+.icon-facebook,
+.icon-git_circle_alt,
+.icon-git_circle,
+.icon-git,
+.icon-octopus,
+.icon-twitter_circle,
+.icon-twitter,
+.icon-google_plus_circle,
+.icon-google_plus,
+.icon-linked_in_circle,
+.icon-linked_in,
+.icon-instagram,
+.icon-instagram_circle,
+.icon-mfg_icon,
+.icon-xing,
+.icon-xing_circle,
+.icon-mfg_icon_circle,
+.icon-user,
+.icon-user_male,
+.icon-user_female,
+.icon-users,
+.icon-file_open,
+.icon-file_close,
+.icon-file_alt,
+.icon-file_close_alt,
+.icon-attachment,
+.icon-check,
+.icon-cross_mark,
+.icon-cancel_circle,
+.icon-check_circle,
+.icon-magnifying,
+.icon-inbox,
+.icon-clock,
+.icon-stopwatch,
+.icon-hourglass,
+.icon-trophy,
+.icon-unlock_alt,
+.icon-lock_alt,
+.icon-arrow_doubled_right,
+.icon-arrow_doubled_left,
+.icon-arrow_doubled_down,
+.icon-arrow_doubled_up,
+.icon-link,
+.icon-warning,
+.icon-warning_alt,
+.icon-magnifying_plus,
+.icon-magnifying_minus,
+.icon-white_question,
+.icon-black_question,
+.icon-stop,
+.icon-share,
+.icon-eye,
+.icon-trash_can,
+.icon-hard_drive,
+.icon-information_black,
+.icon-information_white,
+.icon-printer,
+.icon-letter,
+.icon-soundcloud,
+.icon-soundcloud_circle,
+.icon-anchor,
+.icon-female_sign,
+.icon-male_sign,
+.icon-joystick,
+.icon-high_voltage,
+.icon-fire,
+.icon-newspaper,
+.icon-chart,
+.icon-spread,
+.icon-spinner_1,
+.icon-spinner_2,
+.icon-chart_alt,
+.icon-label,
+.icon-brush,
+.icon-refresh,
+.icon-node,
+.icon-node_2,
+.icon-node_3,
+.icon-link_2_nodes,
+.icon-link_3_nodes,
+.icon-link_loop_nodes,
+.icon-node_size,
+.icon-node_color,
+.icon-layout_directed,
+.icon-layout_radial,
+.icon-layout_hierarchical,
+.icon-node_link_direction,
+.icon-node_link_short_path,
+.icon-node_cluster,
+.icon-display_graph,
+.icon-node_link_weight,
+.icon-more_node_links,
+.icon-node_shape,
+.icon-node_icon,
+.icon-node_text,
+.icon-node_link_text,
+.icon-node_link_color,
+.icon-node_link_shape,
+.icon-credit_card,
+.icon-disconnect,
+.icon-graph,
+.icon-new_user {
+  font-family: 'mfg';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  color: #e3e3e3;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 211, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon2x {
+  font-size: 2rem;
+}
+
+/* line 212, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon3x {
+  font-size: 3rem;
+}
+
+/* line 214, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-cloud:before {
+  content: "\2601";
+}
+
+/* line 215, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-at:before {
+  content: "\0040";
+}
+
+/* line 216, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-plus:before {
+  content: "\002B";
+}
+
+/* line 217, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-minus:before {
+  content: "\2212";
+}
+
+/* line 218, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_up:before {
+  content: "\2191";
+}
+
+/* line 219, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_down:before {
+  content: "\2193";
+}
+
+/* line 220, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_right:before {
+  content: "\2192";
+}
+
+/* line 221, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_left:before {
+  content: "\2190";
+}
+
+/* line 222, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-chevron_down:before {
+  content: "\f004";
+}
+
+/* line 223, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-chevron_up:before {
+  content: "\f005";
+}
+
+/* line 224, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-chevron_right:before {
+  content: "\f006";
+}
+
+/* line 225, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-chevron_left:before {
+  content: "\f007";
+}
+
+/* line 226, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-reorder:before {
+  content: "\f008";
+}
+
+/* line 227, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-list:before {
+  content: "\f009";
+}
+
+/* line 228, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-reorder_square:before {
+  content: "\f00a";
+}
+
+/* line 229, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-reorder_square_line:before {
+  content: "\f00b";
+}
+
+/* line 230, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-coverflow:before {
+  content: "\f00c";
+}
+
+/* line 231, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-coverflow_line:before {
+  content: "\f00d";
+}
+
+/* line 232, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-pause:before {
+  content: "\f00e";
+}
+
+/* line 233, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-play:before {
+  content: "\f00f";
+}
+
+/* line 234, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-step_forward:before {
+  content: "\f010";
+}
+
+/* line 235, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-step_backward:before {
+  content: "\f011";
+}
+
+/* line 236, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-fast_forward:before {
+  content: "\f012";
+}
+
+/* line 237, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-fast_backward:before {
+  content: "\f013";
+}
+
+/* line 238, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-cloud_upload:before {
+  content: "\f014";
+}
+
+/* line 239, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-cloud_download:before {
+  content: "\f015";
+}
+
+/* line 240, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-data_science:before {
+  content: "\f016";
+}
+
+/* line 241, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-data_science_black:before {
+  content: "\f017";
+}
+
+/* line 242, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-globe:before {
+  content: "\f018";
+}
+
+/* line 243, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-globe_black:before {
+  content: "\f019";
+}
+
+/* line 244, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-math_ico:before {
+  content: "\f01a";
+}
+
+/* line 245, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-star:before {
+  content: "\f01b";
+}
+
+/* line 246, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-math_black:before {
+  content: "\f01c";
+}
+
+/* line 247, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-paperplane_ico:before {
+  content: "\f01d";
+}
+
+/* line 248, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-paperplane:before {
+  content: "\f01e";
+}
+
+/* line 249, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-paperplane_black:before {
+  content: "\f01f";
+}
+
+/* line 250, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-color_balance:before {
+  content: "\f020";
+}
+
+/* line 251, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-star:before {
+  content: "\2605";
+}
+
+/* line 252, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-star_half:before {
+  content: "\f022";
+}
+
+/* line 253, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-star_empty:before {
+  content: "\2606";
+}
+
+/* line 254, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-star_half_empty:before {
+  content: "\f024";
+}
+
+/* line 255, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-reload:before {
+  content: "\f025";
+}
+
+/* line 256, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-heart:before {
+  content: "\2665";
+}
+
+/* line 257, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-heart_broken:before {
+  content: "\f028";
+}
+
+/* line 258, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-hashtag:before {
+  content: "\f029";
+}
+
+/* line 259, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-reply:before {
+  content: "\f02a";
+}
+
+/* line 260, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-retweet:before {
+  content: "\f02b";
+}
+
+/* line 261, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-signin:before {
+  content: "\f02c";
+}
+
+/* line 262, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-signout:before {
+  content: "\f02d";
+}
+
+/* line 263, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-download:before {
+  content: "\f02e";
+}
+
+/* line 264, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-upload:before {
+  content: "\f02f";
+}
+
+/* line 265, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-placepin:before {
+  content: "\f031";
+}
+
+/* line 266, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-display_screen:before {
+  content: "\f032";
+}
+
+/* line 267, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-tablet:before {
+  content: "\f033";
+}
+
+/* line 268, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-smartphone:before {
+  content: "\f034";
+}
+
+/* line 269, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-connected_object:before {
+  content: "\f035";
+}
+
+/* line 270, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-lock:before {
+  content: "\F512";
+}
+
+/* line 271, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-unlock:before {
+  content: "\F513";
+}
+
+/* line 272, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-camera:before {
+  content: "\F4F7";
+}
+
+/* line 273, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-isight:before {
+  content: "\f039";
+}
+
+/* line 274, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-video_camera:before {
+  content: "\f03a";
+}
+
+/* line 275, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-random:before {
+  content: "\f03b";
+}
+
+/* line 276, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-message:before {
+  content: "\F4AC";
+}
+
+/* line 277, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-discussion:before {
+  content: "\f03d";
+}
+
+/* line 278, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-calendar:before {
+  content: "\F4C5";
+}
+
+/* line 279, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-ringbell:before {
+  content: "\f03f";
+}
+
+/* line 280, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-movie:before {
+  content: "\f040";
+}
+
+/* line 281, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-mail:before {
+  content: "\2709";
+}
+
+/* line 282, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-pen:before {
+  content: "\270F";
+}
+
+/* line 283, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-settings:before {
+  content: "\9881";
+}
+
+/* line 284, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-measure:before {
+  content: "\f044";
+}
+
+/* line 285, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-vector:before {
+  content: "\f045";
+}
+
+/* line 286, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-vector_pen:before {
+  content: "\2712";
+}
+
+/* line 287, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-mute_on:before {
+  content: "\f047";
+}
+
+/* line 288, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-mute_off:before {
+  content: "\f048";
+}
+
+/* line 289, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-home:before {
+  content: "\2302";
+}
+
+/* line 290, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sheet:before {
+  content: "\f04a";
+}
+
+/* line 291, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_big_right:before {
+  content: "\21C9";
+}
+
+/* line 292, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_big_left:before {
+  content: "\21C7";
+}
+
+/* line 293, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_big_down:before {
+  content: "\21CA";
+}
+
+/* line 294, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_big_up:before {
+  content: "\21C8";
+}
+
+/* line 295, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-dribbble_circle:before {
+  content: "\f04f";
+}
+
+/* line 296, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-dribbble:before {
+  content: "\f050";
+}
+
+/* line 297, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-facebook_circle:before {
+  content: "\f051";
+}
+
+/* line 298, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-facebook:before {
+  content: "\f052";
+}
+
+/* line 299, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-git_circle_alt:before {
+  content: "\f053";
+}
+
+/* line 300, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-git_circle:before {
+  content: "\f054";
+}
+
+/* line 301, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-git:before {
+  content: "\f055";
+}
+
+/* line 302, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-octopus:before {
+  content: "\f056";
+}
+
+/* line 303, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-twitter_circle:before {
+  content: "\f057";
+}
+
+/* line 304, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-twitter:before {
+  content: "\f058";
+}
+
+/* line 305, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-google_plus_circle:before {
+  content: "\f059";
+}
+
+/* line 306, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-google_plus:before {
+  content: "\f05a";
+}
+
+/* line 307, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-linked_in_circle:before {
+  content: "\f05b";
+}
+
+/* line 308, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-linked_in:before {
+  content: "\f05c";
+}
+
+/* line 309, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-instagram:before {
+  content: "\f05d";
+}
+
+/* line 310, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-instagram_circle:before {
+  content: "\f05e";
+}
+
+/* line 311, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-mfg_icon:before {
+  content: "\f05f";
+}
+
+/* line 312, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-xing:before {
+  content: "\F532";
+}
+
+/* line 313, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-xing_circle:before {
+  content: "\F533";
+}
+
+/* line 314, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-mfg_icon_circle:before {
+  content: "\f060";
+}
+
+/* line 315, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-user:before {
+  content: "\f061";
+}
+
+/* line 316, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-user_male:before {
+  content: "\f062";
+}
+
+/* line 317, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-user_female:before {
+  content: "\f063";
+}
+
+/* line 318, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-users:before {
+  content: "\f064";
+}
+
+/* line 319, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-file_open:before {
+  content: "\F4C2";
+}
+
+/* line 320, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-file_close:before {
+  content: "\f067";
+}
+
+/* line 321, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-file_alt:before {
+  content: "\f068";
+}
+
+/* line 322, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-file_close_alt:before {
+  content: "\f069";
+}
+
+/* line 323, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-attachment:before {
+  content: "\f06a";
+}
+
+/* line 324, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-check:before {
+  content: "\2713";
+}
+
+/* line 325, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-cross_mark:before {
+  content: "\274C";
+}
+
+/* line 326, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-cancel_circle:before {
+  content: "\F06E";
+}
+
+/* line 327, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-check_circle:before {
+  content: "\f06d";
+}
+
+/* line 328, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-magnifying:before {
+  content: "\F50D";
+}
+
+/* line 329, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-inbox:before {
+  content: "\f070";
+}
+
+/* line 330, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-clock:before {
+  content: "\23F2";
+}
+
+/* line 331, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-stopwatch:before {
+  content: "\23F1";
+}
+
+/* line 332, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-hourglass:before {
+  content: "\231B";
+}
+
+/* line 333, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-trophy:before {
+  content: "\f074";
+}
+
+/* line 334, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-unlock_alt:before {
+  content: "\F075";
+}
+
+/* line 335, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-lock_alt:before {
+  content: "\F510";
+}
+
+/* line 336, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_doubled_right:before {
+  content: "\21D2";
+}
+
+/* line 337, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_doubled_left:before {
+  content: "\21D0";
+}
+
+/* line 338, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_doubled_down:before {
+  content: "\21D3";
+}
+
+/* line 339, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-arrow_doubled_up:before {
+  content: "\21D1";
+}
+
+/* line 340, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-link:before {
+  content: "\f07B";
+}
+
+/* line 341, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-warning:before {
+  content: "\2757";
+}
+
+/* line 342, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-warning_alt:before {
+  content: "\2755";
+}
+
+/* line 343, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-magnifying_plus:before {
+  content: "\f07E";
+}
+
+/* line 344, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-magnifying_minus:before {
+  content: "\f07F";
+}
+
+/* line 345, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-white_question:before {
+  content: "\2754";
+}
+
+/* line 346, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-black_question:before {
+  content: "\2753";
+}
+
+/* line 347, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-stop:before {
+  content: "\f080";
+}
+
+/* line 348, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-share:before {
+  content: "\f081";
+}
+
+/* line 349, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-eye:before {
+  content: "\f082";
+}
+
+/* line 350, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-trash_can:before {
+  content: "\f083";
+}
+
+/* line 351, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-hard_drive:before {
+  content: "\f084";
+}
+
+/* line 352, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-information_black:before {
+  content: "\f085";
+}
+
+/* line 353, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-information_white:before {
+  content: "\f086";
+}
+
+/* line 354, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-printer:before {
+  content: "\f087";
+}
+
+/* line 355, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-letter:before {
+  content: "\f088";
+}
+
+/* line 356, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-soundcloud:before {
+  content: "\f089";
+}
+
+/* line 357, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-soundcloud_circle:before {
+  content: "\f08A";
+}
+
+/* line 358, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-anchor:before {
+  content: "\2693";
+}
+
+/* line 359, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-female_sign:before {
+  content: "\2640";
+}
+
+/* line 360, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-male_sign:before {
+  content: "\2642";
+}
+
+/* line 361, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-joystick:before {
+  content: "\F514";
+}
+
+/* line 362, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-high_voltage:before {
+  content: "\26A1";
+}
+
+/* line 363, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-fire:before {
+  content: "\F525";
+}
+
+/* line 364, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-newspaper:before {
+  content: "\F4F0";
+}
+
+/* line 365, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-chart:before {
+  content: "\F526";
+}
+
+/* line 366, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-spread:before {
+  content: "\F527";
+}
+
+/* line 367, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-spinner_1:before {
+  content: "\F528";
+}
+
+/* line 368, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-spinner_2:before {
+  content: "\F529";
+}
+
+/* line 369, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-chart_alt:before {
+  content: "\F530";
+}
+
+/* line 370, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-label:before {
+  content: "\F531";
+}
+
+/* line 371, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-brush:before {
+  content: "\E000";
+}
+
+/* line 372, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-refresh:before {
+  content: "\E001";
+}
+
+/* line 373, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node:before {
+  content: "\E002";
+}
+
+/* line 374, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_2:before {
+  content: "\E003";
+}
+
+/* line 375, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_3:before {
+  content: "\E004";
+}
+
+/* line 376, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-link_2_nodes:before {
+  content: "\E005";
+}
+
+/* line 377, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-link_3_nodes:before {
+  content: "\E006";
+}
+
+/* line 378, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-link_loop_nodes:before {
+  content: "\E007";
+}
+
+/* line 379, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_size:before {
+  content: "\E008";
+}
+
+/* line 380, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_color:before {
+  content: "\E009";
+}
+
+/* line 381, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-layout_directed:before {
+  content: "\E010";
+}
+
+/* line 382, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-layout_radial:before {
+  content: "\E011";
+}
+
+/* line 383, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-layout_hierarchical:before {
+  content: "\E012";
+}
+
+/* line 384, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_link_direction:before {
+  content: "\E013";
+}
+
+/* line 385, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_link_short_path:before {
+  content: "\E014";
+}
+
+/* line 386, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_cluster:before {
+  content: "\E015";
+}
+
+/* line 387, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-display_graph:before {
+  content: "\E016";
+}
+
+/* line 388, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_link_weight:before {
+  content: "\E017";
+}
+
+/* line 389, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-more_node_links:before {
+  content: "\E018";
+}
+
+/* line 390, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_shape:before {
+  content: "\E00A";
+}
+
+/* line 391, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_icon:before {
+  content: "\E00B";
+}
+
+/* line 392, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_text:before {
+  content: "\E00C";
+}
+
+/* line 393, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_link_text:before {
+  content: "\E00D";
+}
+
+/* line 394, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_link_color:before {
+  content: "\E00E";
+}
+
+/* line 395, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-node_link_shape:before {
+  content: "\E00F";
+}
+
+/* line 396, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-credit_card:before {
+  content: "\F4B3";
+}
+
+/* line 397, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-disconnect:before {
+  content: "\F534";
+}
+
+/* line 398, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-graph:before {
+  content: "\F535";
+}
+
+/* line 399, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-new_user:before {
+  content: "\F536";
+}
+
+/* Icon font - Simple Line Icons */
+@font-face {
+  font-family: 'sli';
+  src: url(/assets/Simple-Line-Icons-22c149d485c7a93e34970dbf8045411d617d430bc6e4ac58a799b07a877ad601.eot?v=2.2.2);
+  src: url(/assets/Simple-Line-Icons-22c149d485c7a93e34970dbf8045411d617d430bc6e4ac58a799b07a877ad601.eot?v=2.2.2#iefix) format("embedded-opentype"), url(/assets/Simple-Line-Icons-10e72108d9a16dc366f93acd9085e45c2444d59df72781cdc46aa7024208a9cd.ttf?v=2.2.2) format("truetype"), url(/fonts/Simple-Line-Icons.woff2?v=2.2.2) format("woff2"), url(/assets/Simple-Line-Icons-dbf691d7949f2a9a2b0e81c167d47443406a6a2277e64050c381cfeb6fd514de.woff?v=2.2.2) format("woff"), url(/assets/Simple-Line-Icons-5f1456308861304d3b49592896ff2343b4d282722ff4294e5637b807543722d9.svg?v=2.2.2#simple-line-icons) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 415, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-user,
+.icon-sli-people,
+.icon-sli-user-female,
+.icon-sli-user-follow,
+.icon-sli-user-following,
+.icon-sli-user-unfollow,
+.icon-sli-login,
+.icon-sli-logout,
+.icon-sli-emotsmile,
+.icon-sli-phone,
+.icon-sli-call-end,
+.icon-sli-call-in,
+.icon-sli-call-out,
+.icon-sli-map,
+.icon-sli-location-pin,
+.icon-sli-direction,
+.icon-sli-directions,
+.icon-sli-compass,
+.icon-sli-layers,
+.icon-sli-menu,
+.icon-sli-list,
+.icon-sli-options-vertical,
+.icon-sli-options,
+.icon-sli-arrow-down,
+.icon-sli-arrow-left,
+.icon-sli-arrow-right,
+.icon-sli-arrow-up,
+.icon-sli-arrow-up-circle,
+.icon-sli-arrow-left-circle,
+.icon-sli-arrow-right-circle,
+.icon-sli-arrow-down-circle,
+.icon-sli-check,
+.icon-sli-clock,
+.icon-sli-plus,
+.icon-sli-minus,
+.icon-sli-close,
+.icon-sli-organization,
+.icon-sli-trophy,
+.icon-sli-screen-smartphone,
+.icon-sli-screen-desktop,
+.icon-sli-plane,
+.icon-sli-notebook,
+.icon-sli-mustache,
+.icon-sli-mouse,
+.icon-sli-magnet,
+.icon-sli-energy,
+.icon-sli-disc,
+.icon-sli-cursor,
+.icon-sli-cursor-move,
+.icon-sli-crop,
+.icon-sli-chemistry,
+.icon-sli-speedometer,
+.icon-sli-shield,
+.icon-sli-screen-tablet,
+.icon-sli-magic-wand,
+.icon-sli-hourglass,
+.icon-sli-graduation,
+.icon-sli-ghost,
+.icon-sli-game-controller,
+.icon-sli-fire,
+.icon-sli-eyeglass,
+.icon-sli-envelope-open,
+.icon-sli-envelope-letter,
+.icon-sli-bell,
+.icon-sli-badge,
+.icon-sli-anchor,
+.icon-sli-wallet,
+.icon-sli-vector,
+.icon-sli-speech,
+.icon-sli-puzzle,
+.icon-sli-printer,
+.icon-sli-present,
+.icon-sli-playlist,
+.icon-sli-pin,
+.icon-sli-picture,
+.icon-sli-handbag,
+.icon-sli-globe-alt,
+.icon-sli-globe,
+.icon-sli-folder-alt,
+.icon-sli-folder,
+.icon-sli-film,
+.icon-sli-feed,
+.icon-sli-drop,
+.icon-sli-drawer,
+.icon-sli-docs,
+.icon-sli-doc,
+.icon-sli-diamond,
+.icon-sli-cup,
+.icon-sli-calculator,
+.icon-sli-bubbles,
+.icon-sli-briefcase,
+.icon-sli-book-open,
+.icon-sli-basket-loaded,
+.icon-sli-basket,
+.icon-sli-bag,
+.icon-sli-action-undo,
+.icon-sli-action-redo,
+.icon-sli-wrench,
+.icon-sli-umbrella,
+.icon-sli-trash,
+.icon-sli-tag,
+.icon-sli-support,
+.icon-sli-frame,
+.icon-sli-size-fullscreen,
+.icon-sli-size-actual,
+.icon-sli-shuffle,
+.icon-sli-share-alt,
+.icon-sli-share,
+.icon-sli-rocket,
+.icon-sli-question,
+.icon-sli-pie-chart,
+.icon-sli-pencil,
+.icon-sli-note,
+.icon-sli-loop,
+.icon-sli-home,
+.icon-sli-grid,
+.icon-sli-graph,
+.icon-sli-microphone,
+.icon-sli-music-tone-alt,
+.icon-sli-music-tone,
+.icon-sli-earphones-alt,
+.icon-sli-earphones,
+.icon-sli-equalizer,
+.icon-sli-like,
+.icon-sli-dislike,
+.icon-sli-control-start,
+.icon-sli-control-rewind,
+.icon-sli-control-play,
+.icon-sli-control-pause,
+.icon-sli-control-forward,
+.icon-sli-control-end,
+.icon-sli-volume-1,
+.icon-sli-volume-2,
+.icon-sli-volume-off,
+.icon-sli-calendar,
+.icon-sli-bulb,
+.icon-sli-chart,
+.icon-sli-ban,
+.icon-sli-bubble,
+.icon-sli-camrecorder,
+.icon-sli-camera,
+.icon-sli-cloud-download,
+.icon-sli-cloud-upload,
+.icon-sli-envelope,
+.icon-sli-eye,
+.icon-sli-flag,
+.icon-sli-heart,
+.icon-sli-info,
+.icon-sli-key,
+.icon-sli-link,
+.icon-sli-lock,
+.icon-sli-lock-open,
+.icon-sli-magnifier,
+.icon-sli-magnifier-add,
+.icon-sli-magnifier-remove,
+.icon-sli-paper-clip,
+.icon-sli-paper-plane,
+.icon-sli-power,
+.icon-sli-refresh,
+.icon-sli-reload,
+.icon-sli-settings,
+.icon-sli-star,
+.icon-sli-symbol-female,
+.icon-sli-symbol-male,
+.icon-sli-target,
+.icon-sli-credit-card,
+.icon-sli-paypal,
+.icon-sli-social-tumblr,
+.icon-sli-social-twitter,
+.icon-sli-social-facebook,
+.icon-sli-social-instagram,
+.icon-sli-social-linkedin,
+.icon-sli-social-pinterest,
+.icon-sli-social-github,
+.icon-sli-social-google,
+.icon-sli-social-reddit,
+.icon-sli-social-skype,
+.icon-sli-social-dribbble,
+.icon-sli-social-behance,
+.icon-sli-social-foursqare,
+.icon-sli-social-soundcloud,
+.icon-sli-social-spotify,
+.icon-sli-social-stumbleupon,
+.icon-sli-social-youtube,
+.icon-sli-social-dropbox {
+  font-family: 'sli';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  color: #e3e3e3;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 611, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-user:before {
+  content: "\e005";
+}
+
+/* line 612, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-people:before {
+  content: "\e001";
+}
+
+/* line 613, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-user-female:before {
+  content: "\e000";
+}
+
+/* line 614, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-user-follow:before {
+  content: "\e002";
+}
+
+/* line 615, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-user-following:before {
+  content: "\e003";
+}
+
+/* line 616, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-user-unfollow:before {
+  content: "\e004";
+}
+
+/* line 617, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-login:before {
+  content: "\e066";
+}
+
+/* line 618, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-logout:before {
+  content: "\e065";
+}
+
+/* line 619, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-emotsmile:before {
+  content: "\e021";
+}
+
+/* line 620, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-phone:before {
+  content: "\e600";
+}
+
+/* line 621, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-call-end:before {
+  content: "\e048";
+}
+
+/* line 622, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-call-in:before {
+  content: "\e047";
+}
+
+/* line 623, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-call-out:before {
+  content: "\e046";
+}
+
+/* line 624, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-map:before {
+  content: "\e033";
+}
+
+/* line 625, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-location-pin:before {
+  content: "\e096";
+}
+
+/* line 626, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-direction:before {
+  content: "\e042";
+}
+
+/* line 627, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-directions:before {
+  content: "\e041";
+}
+
+/* line 628, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-compass:before {
+  content: "\e045";
+}
+
+/* line 629, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-layers:before {
+  content: "\e034";
+}
+
+/* line 630, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-menu:before {
+  content: "\e601";
+}
+
+/* line 631, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-list:before {
+  content: "\e067";
+}
+
+/* line 632, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-options-vertical:before {
+  content: "\e602";
+}
+
+/* line 633, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-options:before {
+  content: "\e603";
+}
+
+/* line 634, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-arrow-down:before {
+  content: "\e604";
+}
+
+/* line 635, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-arrow-left:before {
+  content: "\e605";
+}
+
+/* line 636, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-arrow-right:before {
+  content: "\e606";
+}
+
+/* line 637, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-arrow-up:before {
+  content: "\e607";
+}
+
+/* line 638, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-arrow-up-circle:before {
+  content: "\e078";
+}
+
+/* line 639, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-arrow-left-circle:before {
+  content: "\e07a";
+}
+
+/* line 640, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-arrow-right-circle:before {
+  content: "\e079";
+}
+
+/* line 641, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-arrow-down-circle:before {
+  content: "\e07b";
+}
+
+/* line 642, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-check:before {
+  content: "\e080";
+}
+
+/* line 643, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-clock:before {
+  content: "\e081";
+}
+
+/* line 644, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-plus:before {
+  content: "\e095";
+}
+
+/* line 645, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-minus:before {
+  content: "\e615";
+}
+
+/* line 646, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-close:before {
+  content: "\e082";
+}
+
+/* line 647, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-organization:before {
+  content: "\e616";
+}
+
+/* line 649, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-trophy:before {
+  content: "\e006";
+}
+
+/* line 650, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-screen-smartphone:before {
+  content: "\e010";
+}
+
+/* line 651, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-screen-desktop:before {
+  content: "\e011";
+}
+
+/* line 652, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-plane:before {
+  content: "\e012";
+}
+
+/* line 653, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-notebook:before {
+  content: "\e013";
+}
+
+/* line 654, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-mustache:before {
+  content: "\e014";
+}
+
+/* line 655, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-mouse:before {
+  content: "\e015";
+}
+
+/* line 656, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-magnet:before {
+  content: "\e016";
+}
+
+/* line 657, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-energy:before {
+  content: "\e020";
+}
+
+/* line 658, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-disc:before {
+  content: "\e022";
+}
+
+/* line 659, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-cursor:before {
+  content: "\e06e";
+}
+
+/* line 660, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-cursor-move:before {
+  content: "\e023";
+}
+
+/* line 661, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-crop:before {
+  content: "\e024";
+}
+
+/* line 662, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-chemistry:before {
+  content: "\e026";
+}
+
+/* line 663, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-speedometer:before {
+  content: "\e007";
+}
+
+/* line 664, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-shield:before {
+  content: "\e00e";
+}
+
+/* line 665, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-screen-tablet:before {
+  content: "\e00f";
+}
+
+/* line 666, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-magic-wand:before {
+  content: "\e017";
+}
+
+/* line 667, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-hourglass:before {
+  content: "\e018";
+}
+
+/* line 668, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-graduation:before {
+  content: "\e019";
+}
+
+/* line 669, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-ghost:before {
+  content: "\e01a";
+}
+
+/* line 670, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-game-controller:before {
+  content: "\e01b";
+}
+
+/* line 671, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-fire:before {
+  content: "\e01c";
+}
+
+/* line 672, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-eyeglass:before {
+  content: "\e01d";
+}
+
+/* line 673, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-envelope-open:before {
+  content: "\e01e";
+}
+
+/* line 674, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-envelope-letter:before {
+  content: "\e01f";
+}
+
+/* line 675, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-bell:before {
+  content: "\e027";
+}
+
+/* line 676, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-badge:before {
+  content: "\e028";
+}
+
+/* line 677, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-anchor:before {
+  content: "\e029";
+}
+
+/* line 678, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-wallet:before {
+  content: "\e02a";
+}
+
+/* line 679, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-vector:before {
+  content: "\e02b";
+}
+
+/* line 680, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-speech:before {
+  content: "\e02c";
+}
+
+/* line 681, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-puzzle:before {
+  content: "\e02d";
+}
+
+/* line 682, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-printer:before {
+  content: "\e02e";
+}
+
+/* line 683, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-present:before {
+  content: "\e02f";
+}
+
+/* line 684, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-playlist:before {
+  content: "\e030";
+}
+
+/* line 685, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-pin:before {
+  content: "\e031";
+}
+
+/* line 686, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-picture:before {
+  content: "\e032";
+}
+
+/* line 687, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-handbag:before {
+  content: "\e035";
+}
+
+/* line 688, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-globe-alt:before {
+  content: "\e036";
+}
+
+/* line 689, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-globe:before {
+  content: "\e037";
+}
+
+/* line 690, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-folder-alt:before {
+  content: "\e039";
+}
+
+/* line 691, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-folder:before {
+  content: "\e089";
+}
+
+/* line 692, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-film:before {
+  content: "\e03a";
+}
+
+/* line 693, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-feed:before {
+  content: "\e03b";
+}
+
+/* line 694, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-drop:before {
+  content: "\e03e";
+}
+
+/* line 695, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-drawer:before {
+  content: "\e03f";
+}
+
+/* line 696, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-docs:before {
+  content: "\e040";
+}
+
+/* line 697, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-doc:before {
+  content: "\e085";
+}
+
+/* line 698, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-diamond:before {
+  content: "\e043";
+}
+
+/* line 699, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-cup:before {
+  content: "\e044";
+}
+
+/* line 700, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-calculator:before {
+  content: "\e049";
+}
+
+/* line 701, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-bubbles:before {
+  content: "\e04a";
+}
+
+/* line 702, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-briefcase:before {
+  content: "\e04b";
+}
+
+/* line 703, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-book-open:before {
+  content: "\e04c";
+}
+
+/* line 704, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-basket-loaded:before {
+  content: "\e04d";
+}
+
+/* line 705, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-basket:before {
+  content: "\e04e";
+}
+
+/* line 706, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-bag:before {
+  content: "\e04f";
+}
+
+/* line 707, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-action-undo:before {
+  content: "\e050";
+}
+
+/* line 708, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-action-redo:before {
+  content: "\e051";
+}
+
+/* line 709, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-wrench:before {
+  content: "\e052";
+}
+
+/* line 710, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-umbrella:before {
+  content: "\e053";
+}
+
+/* line 711, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-trash:before {
+  content: "\e054";
+}
+
+/* line 712, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-tag:before {
+  content: "\e055";
+}
+
+/* line 713, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-support:before {
+  content: "\e056";
+}
+
+/* line 714, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-frame:before {
+  content: "\e038";
+}
+
+/* line 715, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-size-fullscreen:before {
+  content: "\e057";
+}
+
+/* line 716, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-size-actual:before {
+  content: "\e058";
+}
+
+/* line 717, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-shuffle:before {
+  content: "\e059";
+}
+
+/* line 718, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-share-alt:before {
+  content: "\e05a";
+}
+
+/* line 719, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-share:before {
+  content: "\e05b";
+}
+
+/* line 720, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-rocket:before {
+  content: "\e05c";
+}
+
+/* line 721, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-question:before {
+  content: "\e05d";
+}
+
+/* line 722, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-pie-chart:before {
+  content: "\e05e";
+}
+
+/* line 723, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-pencil:before {
+  content: "\e05f";
+}
+
+/* line 724, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-note:before {
+  content: "\e060";
+}
+
+/* line 725, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-loop:before {
+  content: "\e064";
+}
+
+/* line 726, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-home:before {
+  content: "\e069";
+}
+
+/* line 727, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-grid:before {
+  content: "\e06a";
+}
+
+/* line 728, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-graph:before {
+  content: "\e06b";
+}
+
+/* line 729, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-microphone:before {
+  content: "\e063";
+}
+
+/* line 730, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-music-tone-alt:before {
+  content: "\e061";
+}
+
+/* line 731, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-music-tone:before {
+  content: "\e062";
+}
+
+/* line 732, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-earphones-alt:before {
+  content: "\e03c";
+}
+
+/* line 733, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-earphones:before {
+  content: "\e03d";
+}
+
+/* line 734, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-equalizer:before {
+  content: "\e06c";
+}
+
+/* line 735, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-like:before {
+  content: "\e068";
+}
+
+/* line 736, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-dislike:before {
+  content: "\e06d";
+}
+
+/* line 737, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-control-start:before {
+  content: "\e06f";
+}
+
+/* line 738, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-control-rewind:before {
+  content: "\e070";
+}
+
+/* line 739, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-control-play:before {
+  content: "\e071";
+}
+
+/* line 740, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-control-pause:before {
+  content: "\e072";
+}
+
+/* line 741, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-control-forward:before {
+  content: "\e073";
+}
+
+/* line 742, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-control-end:before {
+  content: "\e074";
+}
+
+/* line 743, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-volume-1:before {
+  content: "\e09f";
+}
+
+/* line 744, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-volume-2:before {
+  content: "\e0a0";
+}
+
+/* line 745, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-volume-off:before {
+  content: "\e0a1";
+}
+
+/* line 746, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-calendar:before {
+  content: "\e075";
+}
+
+/* line 747, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-bulb:before {
+  content: "\e076";
+}
+
+/* line 748, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-chart:before {
+  content: "\e077";
+}
+
+/* line 749, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-ban:before {
+  content: "\e07c";
+}
+
+/* line 750, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-bubble:before {
+  content: "\e07d";
+}
+
+/* line 751, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-camrecorder:before {
+  content: "\e07e";
+}
+
+/* line 752, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-camera:before {
+  content: "\e07f";
+}
+
+/* line 753, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-cloud-download:before {
+  content: "\e083";
+}
+
+/* line 754, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-cloud-upload:before {
+  content: "\e084";
+}
+
+/* line 755, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-envelope:before {
+  content: "\e086";
+}
+
+/* line 756, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-eye:before {
+  content: "\e087";
+}
+
+/* line 757, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-flag:before {
+  content: "\e088";
+}
+
+/* line 758, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-heart:before {
+  content: "\e08a";
+}
+
+/* line 759, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-info:before {
+  content: "\e08b";
+}
+
+/* line 760, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-key:before {
+  content: "\e08c";
+}
+
+/* line 761, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-link:before {
+  content: "\e08d";
+}
+
+/* line 762, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-lock:before {
+  content: "\e08e";
+}
+
+/* line 763, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-lock-open:before {
+  content: "\e08f";
+}
+
+/* line 764, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-magnifier:before {
+  content: "\e090";
+}
+
+/* line 765, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-magnifier-add:before {
+  content: "\e091";
+}
+
+/* line 766, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-magnifier-remove:before {
+  content: "\e092";
+}
+
+/* line 767, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-paper-clip:before {
+  content: "\e093";
+}
+
+/* line 768, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-paper-plane:before {
+  content: "\e094";
+}
+
+/* line 769, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-power:before {
+  content: "\e097";
+}
+
+/* line 770, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-refresh:before {
+  content: "\e098";
+}
+
+/* line 771, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-reload:before {
+  content: "\e099";
+}
+
+/* line 772, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-settings:before {
+  content: "\e09a";
+}
+
+/* line 773, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-star:before {
+  content: "\e09b";
+}
+
+/* line 774, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-symbol-female:before {
+  content: "\e09c";
+}
+
+/* line 775, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-symbol-male:before {
+  content: "\e09d";
+}
+
+/* line 776, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-target:before {
+  content: "\e09e";
+}
+
+/* line 777, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-credit-card:before {
+  content: "\e025";
+}
+
+/* line 778, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-paypal:before {
+  content: "\e608";
+}
+
+/* line 779, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-tumblr:before {
+  content: "\e00a";
+}
+
+/* line 780, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-twitter:before {
+  content: "\e009";
+}
+
+/* line 781, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-facebook:before {
+  content: "\e00b";
+}
+
+/* line 782, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-instagram:before {
+  content: "\e609";
+}
+
+/* line 783, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-linkedin:before {
+  content: "\e60a";
+}
+
+/* line 784, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-pinterest:before {
+  content: "\e60b";
+}
+
+/* line 785, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-github:before {
+  content: "\e60c";
+}
+
+/* line 786, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-google:before {
+  content: "\e60d";
+}
+
+/* line 787, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-reddit:before {
+  content: "\e60e";
+}
+
+/* line 788, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-skype:before {
+  content: "\e60f";
+}
+
+/* line 789, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-dribbble:before {
+  content: "\e00d";
+}
+
+/* line 790, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-behance:before {
+  content: "\e610";
+}
+
+/* line 791, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-foursqare:before {
+  content: "\e611";
+}
+
+/* line 792, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-soundcloud:before {
+  content: "\e612";
+}
+
+/* line 793, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-spotify:before {
+  content: "\e613";
+}
+
+/* line 794, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-stumbleupon:before {
+  content: "\e614";
+}
+
+/* line 795, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-youtube:before {
+  content: "\e008";
+}
+
+/* line 796, c:/Sites/liwendemo/app/assets/stylesheets/icons.css.scss */
+.icon-sli-social-dropbox:before {
+  content: "\e00c";
+}
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.24
+ */
+
+/* clearfix */
+
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/* CSS3 Transitions */
+
+.owl-origin {
+	-webkit-perspective: 1200px;
+	-webkit-perspective-origin-x : 50%;
+	-webkit-perspective-origin-y : 50%;
+	-moz-perspective : 1200px;
+	-moz-perspective-origin-x : 50%;
+	-moz-perspective-origin-y : 50%;
+	perspective : 1200px;
+}
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+/* backSlide */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+/* goDown */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+/* scaleUp */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  0% {opacity: 1}
+}
+@-moz-keyframes empty {
+  0% {opacity: 1}
+}
+@keyframes empty {
+  0% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes backSlideOut {
+  25% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+}
+@-moz-keyframes backSlideOut {
+  25% { opacity: .5; -moz-transform: translateZ(-500px); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+}
+@keyframes backSlideOut {
+  25% { opacity: .5; transform: translateZ(-500px); }
+  75% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+}
+@-webkit-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  100% { opacity: 1; -webkit-transform: translateZ(0) translateX(0); }
+}
+@-moz-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -moz-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px); }
+  100% { opacity: 1; -moz-transform: translateZ(0) translateX(0); }
+}
+@keyframes backSlideIn {
+  0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; transform: translateZ(-500px); }
+  100% { opacity: 1; transform: translateZ(0) translateX(0); }
+}
+@-webkit-keyframes scaleToFade {
+  to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleToFade {
+  to { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleToFade {
+  to { opacity: 0; transform: scale(.8); }
+}
+@-webkit-keyframes goDown {
+  from { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes goDown {
+  from { -moz-transform: translateY(-100%); }
+}
+@keyframes goDown {
+  from { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes scaleUpFrom {
+  from { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpFrom {
+  from { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpFrom {
+  from { opacity: 0; transform: scale(1.5); }
+}
+
+@-webkit-keyframes scaleUpTo {
+  to { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpTo {
+  to { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpTo {
+  to { opacity: 0; transform: scale(1.5); }
+}
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.24
+*/
+
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+@charset "UTF-8";
+/*
+ * Responsee CSS - v4.1 - 2017-05-14
+ * https://www.myresponsee.com
+ * Copyright 2016, Vision Design - graphic zoo
+ * Free to use under the MIT license.
+*/
+/* line 8, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* line 14, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+body {
+  background: none repeat scroll 0 0 #d3d3d3;
+  font-size: 16px;
+  font-family: "Times New Roman", cursive, sans-serif;
+  color: #444;
+}
+
+/* line 20, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #152732;
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 0.5rem 0;
+}
+
+/* line 26, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+h1 {
+  font-size: 2.7rem;
+}
+
+/* line 27, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+h2 {
+  font-size: 2.2rem;
+}
+
+/* line 28, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+h3 {
+  font-size: 1.8rem;
+}
+
+/* line 29, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+h4 {
+  font-size: 1.4rem;
+}
+
+/* line 30, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+h5 {
+  font-size: 1.1rem;
+}
+
+/* line 31, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+h6 {
+  font-size: 0.9rem;
+}
+
+/* line 32, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #9BB800;
+  transition: color 0.20s linear 0s;
+  -o-transition: color 0.20s linear 0s;
+  -ms-transition: color 0.20s linear 0s;
+  -moz-transition: color 0.20s linear 0s;
+  -webkit-transition: color 0.20s linear 0s;
+}
+
+/* line 41, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+a:hover {
+  color: #B6C900;
+}
+
+/* line 42, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+p, li, dl, blockquote, table, kbd {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* line 46, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 47, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.text-center {
+  text-align: center !important;
+}
+
+/* line 48, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 49, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+img {
+  border: 0;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 56, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.owl-item img, .full-img {
+  max-width: none;
+  width: 100%;
+}
+
+/* line 60, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+table {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #f0f0f0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 68, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+table tr td, table tr th {
+  padding: 0.625rem;
+}
+
+/* line 69, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+table tfoot, table thead, table tr:nth-of-type(2n) {
+  background: none repeat scroll 0 0 #f0f0f0;
+}
+
+/* line 70, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+th, table tr:nth-of-type(2n) td {
+  border-right: 1px solid #fff;
+}
+
+/* line 71, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+td {
+  border-right: 1px solid #f0f0f0;
+}
+
+/* line 72, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.size-960 .line, .size-1140 .line, .size-1280 .line {
+  margin: 0 auto;
+  padding: 0 0.625rem;
+}
+
+/* line 76, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+hr {
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  clear: both;
+  height: 0;
+  margin: 2.5rem auto;
+}
+
+/* line 83, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+li {
+  padding: 0;
+}
+
+/* line 84, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+ul, ol {
+  padding-left: 1.25rem;
+}
+
+/* line 85, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+blockquote {
+  border: 2px solid #f0f0f0;
+  padding: 1.25rem;
+}
+
+/* line 89, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+cite {
+  color: #999;
+  display: block;
+  font-size: 0.8rem;
+}
+
+/* line 94, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+cite:before {
+  content: "— ";
+}
+
+/* line 95, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+dl dt {
+  font-weight: 700;
+}
+
+/* line 96, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+dl dd {
+  margin-bottom: 0.625rem;
+}
+
+/* line 97, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+dl dd:last-child {
+  margin-bottom: 0;
+}
+
+/* line 98, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+abbr {
+  cursor: help;
+}
+
+/* line 99, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 100, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+kbd {
+  background: #152732 none repeat scroll 0 0;
+  color: #fff;
+  padding: 0.125rem 0.3125rem;
+}
+
+/* line 105, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+code, kbd, pre, samp {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+/* line 106, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+mark {
+  background: #F3F8A9 none repeat scroll 0 0;
+  padding: 0.125rem 0.3125rem;
+}
+
+/* line 110, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.size-960 .line {
+  max-width: 60rem;
+}
+
+/* line 111, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.size-1140 .line {
+  max-width: 71.25rem;
+}
+
+/* line 112, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.size-1280 .line {
+  max-width: 80rem;
+}
+
+/* line 113, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.size-960.align-content-left .line, .size-1140.align-content-left .line, .size-1280.align-content-left .line {
+  margin-left: 0;
+}
+
+/* line 114, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+form {
+  line-height: 1.4;
+}
+
+/* line 115, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+nav {
+  display: block;
+  width: 100%;
+  background: #152732;
+}
+
+/* line 120, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.line:after, nav:after, .center:after, .box:after, .margin:after, .margin2x:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 129, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.top-nav ul {
+  padding: 0;
+}
+
+/* line 130, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.top-nav ul ul {
+  position: absolute;
+  background: #152732;
+}
+
+/* line 134, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.top-nav li {
+  float: left;
+  list-style: none outside none;
+  cursor: pointer;
+}
+
+/* line 139, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.top-nav li a {
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  padding: 1.25rem;
+}
+
+/* line 145, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.top-nav li ul li a {
+  background: none repeat scroll 0 0 #152732;
+  min-width: 100%;
+  padding: 0.625rem;
+}
+
+/* line 150, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.top-nav li a:hover, .aside-nav li a:hover {
+  background: rgba(153, 153, 153, 0.25);
+}
+
+/* line 151, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.top-nav li ul {
+  display: none;
+}
+
+/* line 152, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.top-nav li ul li, .top-nav li ul li ul li {
+  float: none;
+  list-style: none outside none;
+  min-width: 100%;
+  padding: 0;
+}
+
+/* line 158, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.count-number {
+  background: rgba(153, 153, 153, 0.25) none repeat scroll 0 0;
+  border-radius: 10rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.7rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  margin: 0 0 -0.3125rem 0.3125rem;
+  text-align: center;
+  width: 1.3rem;
+}
+
+/* line 170, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+ul.chevron .count-number {
+  display: none;
+}
+
+/* line 171, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after, ul.chevron .aside-submenu > a:after, ul.chevron .aside-sub-submenu > a:after {
+  content: "\f004";
+  display: inline-block;
+  font-family: mfg;
+  font-size: 0.7rem;
+  margin: 0 0.625rem;
+}
+
+/* line 178, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.top-nav .active-item a {
+  background: none repeat scroll 0 0 rgba(153, 153, 153, 0.25);
+}
+
+/* line 179, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav > ul > li.active-item > a:link, .aside-nav > ul > li.active-item > a:visited {
+  background: none repeat scroll 0 0 rgba(153, 153, 153, 0.25);
+  color: #fff;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 184, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .aside-nav .count-number {
+    margin-left: -1.25rem;
+    float: right;
+  }
+
+  /* line 188, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li:hover > ul {
+    display: block;
+    z-index: 10;
+  }
+
+  /* line 192, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li:hover > ul ul {
+    left: 100%;
+    margin: -2.5rem 0;
+    width: 100%;
+  }
+}
+/* line 198, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.nav-text, .aside-nav-text {
+  display: none;
+}
+
+/* line 199, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav a, .aside-nav a:link, .aside-nav a:visited, .aside-nav li > ul, .top-nav a, .top-nav a:link, .top-nav a:visited {
+  transition: background 0.20s linear 0s;
+  -o-transition: background 0.20s linear 0s;
+  -ms-transition: background 0.20s linear 0s;
+  -moz-transition: background 0.20s linear 0s;
+  -webkit-transition: background 0.20s linear 0s;
+}
+
+/* line 206, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav ul {
+  background: #e8e8e8;
+  padding: 0;
+}
+
+/* line 210, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav li {
+  list-style: none outside none;
+  cursor: pointer;
+}
+
+/* line 214, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav li a, .aside-nav li a:link, .aside-nav li a:visited {
+  color: #444;
+  display: block;
+  font-size: 1rem;
+  padding: 1.25rem;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+/* line 221, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav > ul > li:last-child a {
+  border-bottom: 0 none;
+}
+
+/* line 222, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav li > ul {
+  height: 0;
+  display: block;
+  position: relative;
+  background: #f4f4f4;
+  border-left: solid 1px #f2f2f2;
+  border-right: solid 1px #f2f2f2;
+  overflow: hidden;
+}
+
+/* line 231, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav li ul ul {
+  border: 0;
+  background: #fff;
+}
+
+/* line 235, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav ul ul a {
+  padding: 0.625rem 1.25rem;
+}
+
+/* line 236, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav li a:link, .aside-nav li a:visited {
+  color: #333;
+}
+
+/* line 237, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav li li a:hover, .aside-nav li li.active-item > a, .aside-nav li li.aside-sub-submenu li a:hover {
+  color: #999;
+  background: none;
+}
+
+/* line 241, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav > ul > li > a:hover {
+  color: #fff;
+}
+
+/* line 242, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav li li a:hover:before, .aside-nav li li.active-item a:before {
+  content: "\f006";
+  display: inline-block;
+  font-family: "mfg";
+  font-size: 0.6rem;
+  margin: 0 0.625rem 0 -1.25rem;
+  width: 0.625rem;
+}
+
+/* line 250, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav li li a:link, .aside-nav li li a:visited {
+  background: none;
+}
+
+/* line 251, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.aside-nav .show-aside-ul, .aside-nav .active-aside-item {
+  height: auto;
+}
+
+/* line 252, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.padding {
+  display: list-item;
+  list-style: none outside none;
+  padding: 10px;
+}
+
+/* line 257, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.margin, .margin2x {
+  display: block;
+}
+
+/* line 258, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.margin {
+  margin: 0 -0.625rem;
+}
+
+/* line 259, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.margin2x {
+  margin: 0 -1.25rem;
+}
+
+/* line 260, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.line {
+  clear: left;
+}
+
+/* line 261, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.line .line {
+  padding: 0;
+}
+
+/* line 262, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.hide-l {
+  display: none !important;
+}
+
+/* line 263, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.box {
+  background: none repeat scroll 0 0 #fff;
+  display: block;
+  padding: 1.25rem;
+  width: 100%;
+}
+
+/* line 269, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.margin-bottom {
+  margin-bottom: 1.25rem;
+}
+
+/* line 270, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.margin-bottom2x {
+  margin-bottom: 2.5rem;
+}
+
+/* line 271, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-1, .s-2, .s-five, .s-3, .s-4, .s-5, .s-6, .s-7, .s-8, .s-9, .s-10, .s-11, .s-12, .m-1, .m-2, .m-five, .m-3, .m-4, .m-5, .m-6, .m-7, .m-8, .m-9, .m-10, .m-11, .m-12, .l-1, .l-2, .l-five, .l-3, .l-4, .l-5, .l-6, .l-7, .l-8, .l-9, .l-10, .l-11, .l-12 {
+  float: left;
+  position: static;
+}
+
+/* line 275, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-1 {
+  margin-left: 8.3333%;
+}
+
+/* line 276, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-2 {
+  margin-left: 16.6666%;
+}
+
+/* line 277, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-five {
+  margin-left: 16.6666%;
+}
+
+/* line 278, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 279, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-4 {
+  margin-left: 33.3333%;
+}
+
+/* line 280, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-5 {
+  margin-left: 41.6666%;
+}
+
+/* line 281, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 282, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-7 {
+  margin-left: 58.3333%;
+}
+
+/* line 283, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-8 {
+  margin-left: 66.6666%;
+}
+
+/* line 284, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 285, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-10 {
+  margin-left: 83.3333%;
+}
+
+/* line 286, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-11 {
+  margin-left: 91.6666%;
+}
+
+/* line 287, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-offset-12 {
+  margin-left: 100%;
+}
+
+/* line 288, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-1 {
+  width: 8.3333%;
+}
+
+/* line 289, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-2 {
+  width: 16.6666%;
+}
+
+/* line 290, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-five {
+  width: 16.6666%;
+}
+
+/* line 291, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-3 {
+  width: 25%;
+}
+
+/* line 292, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-4 {
+  width: 33.3333%;
+}
+
+/* line 293, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-5 {
+  width: 41.6666%;
+}
+
+/* line 294, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-6 {
+  width: 50%;
+}
+
+/* line 295, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-7 {
+  width: 58.3333%;
+}
+
+/* line 296, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-8 {
+  width: 66.6666%;
+}
+
+/* line 297, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-9 {
+  width: 75%;
+}
+
+/* line 298, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-10 {
+  width: 83.3333%;
+}
+
+/* line 299, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-11 {
+  width: 91.6666%;
+}
+
+/* line 300, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.s-12 {
+  width: 100%;
+}
+
+/* line 301, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.margin > .s-1, .margin > .s-2, .margin > .s-five, .margin > .s-3, .margin > .s-4, .margin > .s-5, .margin > .s-6, .margin > .s-7, .margin > .s-8, .margin > .s-9, .margin > .s-10, .margin > .s-11, .margin > .s-12,
+.margin > .m-1, .margin > .m-2, .margin > .m-five, .margin > .m-3, .margin > .m-4, .margin > .m-5, .margin > .m-6, .margin > .m-7, .margin > .m-8, .margin > .m-9, .margin > .m-10, .margin > .m-11, .margin > .m-12,
+.margin > .l-1, .margin > .l-2, .margin > .l-five, .margin > .l-3, .margin > .l-4, .margin > .l-5, .margin > .l-6, .margin > .l-7, .margin > .l-8, .margin > .l-9, .margin > .l-10, .margin > .l-11, .margin > .l-12 {
+  padding: 0 0.625rem;
+}
+
+/* line 304, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.margin2x > .s-1, .margin2x > .s-2, .margin2x > .s-five, .margin2x > .s-3, .margin2x > .s-4, .margin2x > .s-5, .margin2x > .s-6, .margin2x > .s-7, .margin2x > .s-8, .margin2x > .s-9, .margin2x > .s-10, .margin2x > .s-11, .margin2x > .s-12,
+.margin2x > .m-1, .margin2x > .m-2, .margin2x > .m-five, .margin2x > .m-3, .margin2x > .m-4, .margin2x > .m-5, .margin2x > .m-6, .margin2x > .m-7, .margin2x > .m-8, .margin2x > .m-9, .margin2x > .m-10, .margin2x > .m-11, .margin2x > .m-12,
+.margin2x > .l-1, .margin2x > .l-2, .margin2x > .l-five, .margin2x > .l-3, .margin2x > .l-4, .margin2x > .l-5, .margin2x > .l-6, .margin2x > .l-7, .margin2x > .l-8, .margin2x > .l-9, .margin2x > .l-10, .margin2x > .l-11, .margin2x > .l-12 {
+  padding: 0 1.25rem;
+}
+
+/* line 307, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-1 {
+  width: 8.3333%;
+}
+
+/* line 308, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-2 {
+  width: 16.6666%;
+}
+
+/* line 309, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-five {
+  width: 20%;
+}
+
+/* line 310, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-3 {
+  width: 25%;
+}
+
+/* line 311, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-4 {
+  width: 33.3333%;
+}
+
+/* line 312, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-5 {
+  width: 41.6666%;
+}
+
+/* line 313, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-6 {
+  width: 50%;
+}
+
+/* line 314, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-7 {
+  width: 58.3333%;
+}
+
+/* line 315, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-8 {
+  width: 66.6666%;
+}
+
+/* line 316, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-9 {
+  width: 75%;
+}
+
+/* line 317, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-10 {
+  width: 83.3333%;
+}
+
+/* line 318, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-11 {
+  width: 91.6666%;
+}
+
+/* line 319, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.m-12 {
+  width: 100%;
+}
+
+/* line 320, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-1 {
+  width: 8.3333%;
+}
+
+/* line 321, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-2 {
+  width: 16.6666%;
+}
+
+/* line 322, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-five {
+  width: 20%;
+}
+
+/* line 323, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-3 {
+  width: 25%;
+}
+
+/* line 324, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-4 {
+  width: 33.3333%;
+}
+
+/* line 325, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-5 {
+  width: 41.6666%;
+}
+
+/* line 326, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-6 {
+  width: 50%;
+}
+
+/* line 327, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-7 {
+  width: 58.3333%;
+}
+
+/* line 328, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-8 {
+  width: 66.6666%;
+}
+
+/* line 329, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-9 {
+  width: 75%;
+}
+
+/* line 330, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-10 {
+  width: 83.3333%;
+}
+
+/* line 331, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-11 {
+  width: 91.6666%;
+}
+
+/* line 332, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.l-12 {
+  width: 100%;
+}
+
+/* line 333, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.right {
+  float: right;
+}
+
+/* line 334, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.left {
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 336, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .size-960, .size-1140, .size-1280 {
+    max-width: 768px;
+  }
+
+  /* line 337, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .hide-l, .hide-s {
+    display: block !important;
+  }
+
+  /* line 338, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .hide-m {
+    display: none !important;
+  }
+
+  /* line 339, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  nav {
+    display: block;
+    cursor: pointer;
+    line-height: 3;
+  }
+
+  /* line 344, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li a {
+    background: none repeat scroll 0 0 #4a4a4a;
+  }
+
+  /* line 345, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav > ul {
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+  }
+
+  /* line 352, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav > ul.show-menu, .aside-nav.minimize-on-small > ul.show-menu {
+    height: auto;
+  }
+
+  /* line 353, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav ul ul {
+    left: 0;
+    margin-top: 0;
+    position: relative;
+    right: 0;
+  }
+
+  /* line 359, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li ul li a {
+    min-width: 100%;
+  }
+
+  /* line 360, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li {
+    float: none;
+    list-style: none outside none;
+    padding: 0;
+  }
+
+  /* line 365, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li a {
+    border-top: 1px solid #333;
+    color: #fff;
+    display: block;
+    padding: 1.25rem 0.625rem;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* line 373, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li ul li a {
+    border-top: 1px solid #878787;
+  }
+
+  /* line 374, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li ul li ul li a {
+    border-top: 1px solid #989898;
+  }
+
+  /* line 375, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li a:hover {
+    background: none repeat scroll 0 0 #8b8b8b;
+    color: #fff;
+  }
+
+  /* line 379, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li ul, .top-nav li ul li ul {
+    display: block;
+    overflow: hidden;
+    height: 0;
+  }
+
+  /* line 384, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav > ul ul.show-ul {
+    display: block;
+    height: auto;
+  }
+
+  /* line 388, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li ul li a {
+    background: none repeat scroll 0 0 #9d9d9d;
+    padding: 0.625rem;
+  }
+
+  /* line 392, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .top-nav li ul li ul li a {
+    background: none repeat scroll 0 0 #d7d7d7;
+    color: #222;
+  }
+
+  /* line 396, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .nav-text {
+    color: #fff;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 3;
+    margin-right: 0.625rem;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  /* line 406, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .nav-text:after {
+    content: "\f008";
+    font-family: "mfg";
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    text-align: right;
+  }
+
+  /* line 413, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-offset-1, .l-offset-2, .l-offset-five, .l-offset-3, .l-offset-4, .l-offset-5, .l-offset-6, .l-offset-7, .l-offset-8, .l-offset-9, .l-offset-10, .l-offset-11, .l-offset-12 {
+    margin-left: 0;
+  }
+
+  /* line 414, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-1 {
+    margin-left: 8.3333%;
+  }
+
+  /* line 415, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-2 {
+    margin-left: 16.6666%;
+  }
+
+  /* line 416, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-five {
+    margin-left: 16.6666%;
+  }
+
+  /* line 417, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 418, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-4 {
+    margin-left: 33.3333%;
+  }
+
+  /* line 419, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-5 {
+    margin-left: 41.6666%;
+  }
+
+  /* line 420, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 421, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-7 {
+    margin-left: 58.3333%;
+  }
+
+  /* line 422, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-8 {
+    margin-left: 66.6666%;
+  }
+
+  /* line 423, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 424, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-10 {
+    margin-left: 83.3333%;
+  }
+
+  /* line 425, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-11 {
+    margin-left: 91.6666%;
+  }
+
+  /* line 426, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 427, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-1 {
+    width: 8.3333%;
+  }
+
+  /* line 428, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-2 {
+    width: 16.6666%;
+  }
+
+  /* line 429, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-five {
+    width: 20%;
+  }
+
+  /* line 430, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-3 {
+    width: 25%;
+  }
+
+  /* line 431, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-4 {
+    width: 33.3333%;
+  }
+
+  /* line 432, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-5 {
+    width: 41.6666%;
+  }
+
+  /* line 433, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-6 {
+    width: 50%;
+  }
+
+  /* line 434, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-7 {
+    width: 58.3333%;
+  }
+
+  /* line 435, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-8 {
+    width: 66.6666%;
+  }
+
+  /* line 436, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-9 {
+    width: 75%;
+  }
+
+  /* line 437, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-10 {
+    width: 83.3333%;
+  }
+
+  /* line 438, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-11 {
+    width: 91.6666%;
+  }
+
+  /* line 439, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-12 {
+    width: 100%;
+  }
+
+  /* line 440, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-1 {
+    width: 8.3333%;
+  }
+
+  /* line 441, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-2 {
+    width: 16.6666%;
+  }
+
+  /* line 442, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-five {
+    width: 20%;
+  }
+
+  /* line 443, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-3 {
+    width: 25%;
+  }
+
+  /* line 444, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-4 {
+    width: 33.3333%;
+  }
+
+  /* line 445, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-5 {
+    width: 41.6666%;
+  }
+
+  /* line 446, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-6 {
+    width: 50%;
+  }
+
+  /* line 447, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-7 {
+    width: 58.3333%;
+  }
+
+  /* line 448, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-8 {
+    width: 66.6666%;
+  }
+
+  /* line 449, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-9 {
+    width: 75%;
+  }
+
+  /* line 450, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-10 {
+    width: 83.3333%;
+  }
+
+  /* line 451, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-11 {
+    width: 91.6666%;
+  }
+
+  /* line 452, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-12 {
+    width: 100%;
+  }
+
+  /* line 453, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-1 {
+    width: 8.3333%;
+  }
+
+  /* line 454, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-2 {
+    width: 16.6666%;
+  }
+
+  /* line 455, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-five {
+    width: 20%;
+  }
+
+  /* line 456, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-3 {
+    width: 25%;
+  }
+
+  /* line 457, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-4 {
+    width: 33.3333%;
+  }
+
+  /* line 458, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-5 {
+    width: 41.6666%;
+  }
+
+  /* line 459, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-6 {
+    width: 50%;
+  }
+
+  /* line 460, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-7 {
+    width: 58.3333%;
+  }
+
+  /* line 461, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-8 {
+    width: 66.6666%;
+  }
+
+  /* line 462, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-9 {
+    width: 75%;
+  }
+
+  /* line 463, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-10 {
+    width: 83.3333%;
+  }
+
+  /* line 464, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-11 {
+    width: 91.6666%;
+  }
+
+  /* line 465, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-12 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 468, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .size-960, .size-1140, .size-1280 {
+    max-width: 480px;
+  }
+
+  /* line 469, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .aside-nav li a {
+    text-align: center;
+  }
+
+  /* line 470, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .minimize-on-small .aside-nav-text {
+    background: #152732 none repeat scroll 0 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 3;
+    max-width: 100%;
+    padding-right: 0.625rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  /* line 482, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .aside-nav-text:after {
+    content: "\f008";
+    font-family: "mfg";
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    text-align: right;
+  }
+
+  /* line 489, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .aside-nav.minimize-on-small > ul {
+    height: 0;
+    overflow: hidden;
+  }
+
+  /* line 493, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .hide-l, .hide-m {
+    display: block !important;
+  }
+
+  /* line 494, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .hide-s {
+    display: none !important;
+  }
+
+  /* line 495, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .count-number {
+    margin-right: -1.25rem;
+  }
+
+  /* line 496, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-offset-1, .l-offset-2, .l-offset-five, .l-offset-3, .l-offset-4, .l-offset-5, .l-offset-6, .l-offset-7, .l-offset-8, .l-offset-9, .l-offset-10, .l-offset-11, .l-offset-12,
+  .m-offset-1, .m-offset-2, .m-offset-five, .m-offset-3, .m-offset-4, .m-offset-5, .m-offset-6, .m-offset-7, .m-offset-8, .m-offset-9, .m-offset-10, .m-offset-11, .m-offset-12 {
+    margin-left: 0;
+  }
+
+  /* line 498, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-1 {
+    margin-left: 8.3333%;
+  }
+
+  /* line 499, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-2 {
+    margin-left: 16.6666%;
+  }
+
+  /* line 500, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-five {
+    margin-left: 16.6666%;
+  }
+
+  /* line 501, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 502, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-4 {
+    margin-left: 33.3333%;
+  }
+
+  /* line 503, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-5 {
+    margin-left: 41.6666%;
+  }
+
+  /* line 504, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 505, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-7 {
+    margin-left: 58.3333%;
+  }
+
+  /* line 506, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-8 {
+    margin-left: 66.6666%;
+  }
+
+  /* line 507, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 508, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-10 {
+    margin-left: 83.3333%;
+  }
+
+  /* line 509, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-11 {
+    margin-left: 91.6666%;
+  }
+
+  /* line 510, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 511, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-1 {
+    width: 8.3333%;
+  }
+
+  /* line 512, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-2 {
+    width: 16.6666%;
+  }
+
+  /* line 513, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-five {
+    width: 20%;
+  }
+
+  /* line 514, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-3 {
+    width: 25%;
+  }
+
+  /* line 515, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-4 {
+    width: 33.3333%;
+  }
+
+  /* line 516, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-5 {
+    width: 41.6666%;
+  }
+
+  /* line 517, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-6 {
+    width: 50%;
+  }
+
+  /* line 518, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-7 {
+    width: 58.3333%;
+  }
+
+  /* line 519, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-8 {
+    width: 66.6666%;
+  }
+
+  /* line 520, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-9 {
+    width: 75%;
+  }
+
+  /* line 521, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-10 {
+    width: 83.3333%;
+  }
+
+  /* line 522, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-11 {
+    width: 91.6666%;
+  }
+
+  /* line 523, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .l-12 {
+    width: 100%;
+  }
+
+  /* line 524, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-1 {
+    width: 8.3333%;
+  }
+
+  /* line 525, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-2 {
+    width: 16.6666%;
+  }
+
+  /* line 526, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-five {
+    width: 20%;
+  }
+
+  /* line 527, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-3 {
+    width: 25%;
+  }
+
+  /* line 528, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-4 {
+    width: 33.3333%;
+  }
+
+  /* line 529, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-5 {
+    width: 41.6666%;
+  }
+
+  /* line 530, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-6 {
+    width: 50%;
+  }
+
+  /* line 531, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-7 {
+    width: 58.3333%;
+  }
+
+  /* line 532, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-8 {
+    width: 66.6666%;
+  }
+
+  /* line 533, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-9 {
+    width: 75%;
+  }
+
+  /* line 534, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-10 {
+    width: 83.3333%;
+  }
+
+  /* line 535, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-11 {
+    width: 91.6666%;
+  }
+
+  /* line 536, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .m-12 {
+    width: 100%;
+  }
+
+  /* line 537, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-1 {
+    width: 8.3333%;
+  }
+
+  /* line 538, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-2 {
+    width: 16.6666%;
+  }
+
+  /* line 539, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-five {
+    width: 20%;
+  }
+
+  /* line 540, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-3 {
+    width: 25%;
+  }
+
+  /* line 541, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-4 {
+    width: 33.3333%;
+  }
+
+  /* line 542, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-5 {
+    width: 41.6666%;
+  }
+
+  /* line 543, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-6 {
+    width: 50%;
+  }
+
+  /* line 544, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-7 {
+    width: 58.3333%;
+  }
+
+  /* line 545, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-8 {
+    width: 66.6666%;
+  }
+
+  /* line 546, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-9 {
+    width: 75%;
+  }
+
+  /* line 547, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-10 {
+    width: 83.3333%;
+  }
+
+  /* line 548, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-11 {
+    width: 91.6666%;
+  }
+
+  /* line 549, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+  .s-12 {
+    width: 100%;
+  }
+}
+/* line 551, c:/Sites/liwendemo/app/assets/stylesheets/responsee.scss */
+.center {
+  float: none;
+  margin: 0 auto;
+  display: block;
+}
+/* line 1, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, c:/Sites/liwendemo/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 1, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+a.white-btn {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  font-size: 0.85em;
+  margin-top: 1.25em;
+  padding: 0.625em 1.25em;
+  transition: all 0.20s linear 0s;
+  -o-transition: all 0.20s linear 0s;
+  -ms-transition: all 0.20s linear 0s;
+  -moz-transition: all 0.20s linear 0s;
+  -webkit-transition: all 0.20s linear 0s;
+}
+
+/* line 15, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+a.white-btn:hover {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+}
+
+/* line 18, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+a.color-btn, form.customform button.color-btn {
+  background: none;
+  border: 1px solid #1d1900;
+  border-radius: 3px;
+  color: #1d1900;
+  display: block;
+  font-size: 0.85em;
+  padding: 0.625em 1.25em;
+  transition: all 0.20s linear 0s;
+  -o-transition: all 0.20s linear 0s;
+  -ms-transition: all 0.20s linear 0s;
+  -moz-transition: all 0.20s linear 0s;
+  -webkit-transition: all 0.20s linear 0s;
+}
+
+/* line 32, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+a.color-btn:hover, form.customform button.color-btn:hover {
+  border: 1px solid #668805;
+  color: #668805;
+}
+
+/* line 36, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#topbar {
+  background: none repeat scroll 0 0 #252000;
+  border-bottom: 1px solid #1d1900;
+  padding: 0.3125em 0;
+}
+
+/* line 41, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#topbar p {
+  color: #fff;
+  font-size: 0.75em;
+  opacity: 0.5;
+  position: relative;
+  top: 2px;
+}
+
+/* line 48, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#topbar p strong {
+  font-weight: 600;
+}
+
+/* line 51, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#topbar i {
+  color: #ffffff;
+  font-size: 1.1em;
+  opacity: 0.5;
+  transition: all 0.20s linear 0s;
+  -o-transition: all 0.20s linear 0s;
+  -ms-transition: all 0.20s linear 0s;
+  -moz-transition: all 0.20s linear 0s;
+  -webkit-transition: all 0.20s linear 0s;
+}
+
+/* line 61, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#topbar i:hover {
+  color: #668805;
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* line 66, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+nav {
+  background: none repeat scroll 0 0 #584302;
+}
+
+/* line 69, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+header {
+  border-bottom: 4px solid rgba(0, 40, 58, 0.53);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 75, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+p.logo {
+  color: #fff;
+  font-size: 1.7em;
+  font-weight: 300;
+  position: relative;
+  text-transform: uppercase;
+  top: 0.625em;
+}
+
+/* line 83, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+p.logo strong {
+  font-weight: 700;
+}
+
+/* line 86, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.top-nav li a {
+  border-top: 2px solid #584302;
+  color: #fff;
+  font-size: 0.95em;
+  font-weight: 600;
+  padding: 2.1em 1.5em 2.5em;
+  text-transform: uppercase;
+  transition: all 0.20s linear 0s;
+  -o-transition: all 0.20s linear 0s;
+  -ms-transition: all 0.20s linear 0s;
+  -moz-transition: all 0.20s linear 0s;
+  -webkit-transition: all 0.20s linear 0s;
+}
+
+/* line 99, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.top-nav li a:hover, .top-nav li.active-item a {
+  background: none repeat scroll 0 0 #584302;
+  border-top: 2px solid #668805;
+  color: #668805;
+  position: relative;
+}
+
+/* line 105, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#carousel .text {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+}
+
+/* line 110, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.item {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 114, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.prev-arrow, .next-arrow {
+  background: none repeat scroll 0 0 #584302;
+  cursor: pointer;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 1px;
+  text-align: center;
+  width: 30px;
+}
+
+/* line 124, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#carousel .text h2 {
+  background: none repeat scroll 0 0 rgba(146, 197, 0, 0.8);
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 1px 0;
+  max-width: 600px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+/* line 135, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#carousel .text p {
+  background: none repeat scroll 0 0 #584302;
+  color: #fff;
+  max-width: 600px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+/* line 142, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#carousel .owl-theme .owl-controls {
+  background: none repeat scroll 0 0 rgba(0, 40, 58, 0.53);
+  bottom: 0;
+  margin: 0;
+  padding: 0.625em 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 150, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.owl-theme .owl-controls .owl-page span {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: 3px solid rgba(0, 40, 58, 0.57);
+  height: 18px;
+  margin: 0 0.3125em;
+  opacity: 1;
+  width: 18px;
+}
+
+/* line 158, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: none repeat scroll 0 0 #668805;
+}
+
+/* line 161, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#first-block {
+  background: none repeat scroll 0 0 #584302;
+  padding: 3em 2em;
+  text-align: center;
+}
+
+/* line 166, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#first-block h1 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+/* line 172, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#first-block p {
+  color: #6c7c84;
+  font-size: 0.85em;
+}
+
+/* line 176, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#features {
+  background: none repeat scroll 0 0 #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  padding: 6em 2em;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 184, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#features i {
+  background: none repeat scroll 0 0 #668805;
+  border-radius: 100px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3) inset;
+  color: #fff;
+  display: inline-block;
+  font-size: 2em;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
+}
+
+/* line 196, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#features h2 {
+  font-size: 1em;
+  font-weight: 600;
+  margin: 1.25em 0;
+  text-transform: uppercase;
+}
+
+/* line 202, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#features p {
+  color: #777;
+  font-size: 0.85em;
+  line-height: 1.5em;
+}
+
+/* line 207, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#about-us {
+  background: none repeat scroll 0 0 #584302;
+  clear: both;
+}
+
+/* line 211, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#about-us:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+/* line 219, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#about-us article {
+  padding: 4em;
+}
+
+/* line 222, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+article h2 {
+  font-size: 4em;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 0.9;
+  margin: 0 0 0.625em 0;
+}
+
+/* line 229, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  color: #fff;
+}
+
+/* line 232, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.media-container {
+  overflow: hidden;
+}
+
+/* line 235, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.media-container video, .media-container img {
+  display: block;
+  height: 100%;
+  max-width: none;
+  min-width: 100%;
+  width: auto;
+}
+
+/* line 242, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+article p, article li {
+  color: #fff;
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+/* line 247, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+article ul {
+  padding: 1.25em 0;
+}
+
+/* line 250, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+article ul li {
+  list-style-type: none;
+  margin: 0.625em 0;
+  padding: 0 0 0 1em;
+}
+
+/* line 255, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+article ul li:before {
+  background: #584302 none repeat scroll 0 0;
+  color: #fff;
+  content: "\f006";
+  display: inline-block;
+  font-family: "mfg";
+  font-size: 0.8em;
+  height: 20px;
+  line-height: 20px;
+  margin-left: -1em;
+  margin-right: 0.625em;
+  text-align: center;
+  width: 20px;
+}
+
+/* line 269, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.about-us-icons i {
+  border: 2px solid #668805;
+  border-radius: 100px;
+  color: #668805;
+  display: block;
+  float: left;
+  font-size: 1.6em;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 0.625em;
+  text-align: center;
+  width: 60px;
+}
+
+/* line 282, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.about-us-icons {
+  display: block;
+  margin-top: 2em;
+}
+
+/* line 286, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+h2.section-title:after {
+  background: #dedede none repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 0.31225em auto 0;
+  position: relative;
+  width: 100px;
+}
+
+/* line 295, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+h2.section-title {
+  color: #dedede;
+  font-size: 3.8em;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0 0 1.25em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 304, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#our-work {
+  background: none repeat scroll 0 0 #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  padding: 6em 2em;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 311, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.tab-item {
+  background: #fff none repeat scroll 0 0;
+  margin-top: 1.25em;
+  padding: 1.25em 0;
+}
+
+/* line 316, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.our-work-container {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+/* line 321, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.our-work-text {
+  background: #584302 none repeat scroll 0 0;
+  bottom: 0;
+  display: block;
+  left: 0;
+  opacity: 0;
+  padding: 1.25em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transition: opacity 0.20s linear 0s;
+  -o-transition: opacityd 0.20s linear 0s;
+  -ms-transition: opacity 0.20s linear 0s;
+  -moz-transition: opacity 0.20s linear 0s;
+  -webkit-transition: opacity 0.20s linear 0s;
+  width: 100%;
+}
+
+/* line 338, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.our-work-container:hover > .our-work-text {
+  opacity: 1;
+}
+
+/* line 341, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.our-work-text h4 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* line 346, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.our-work-text p {
+  color: #fff;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* line 351, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.tab-nav {
+  display: table;
+}
+
+/* line 354, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+a.tab-label, a.tab-label:link, a.tab-label:visited {
+  background: #584302 none repeat scroll 0 0;
+  color: #fff;
+  display: block;
+  font-size: 1em;
+  padding: 0.625em 1.25em;
+  transition: all 0.20s linear 0s;
+  -o-transition: all 0.20s linear 0s;
+  -ms-transition: all 0.20s linear 0s;
+  -moz-transition: all 0.20s linear 0s;
+  -webkit-transition: all 0.20s linear 0s;
+}
+
+/* line 366, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+a.tab-label:hover, a.tab-label.active-btn {
+  background: #668805;
+  color: #fff;
+}
+
+/* line 370, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#services {
+  background: #6f9600 none repeat scroll 0 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  padding: 6em 2em;
+}
+
+/* line 375, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#services h2 {
+  color: #fff;
+  margin: 0 0 1.25em;
+}
+
+/* line 379, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#services h2.section-title:after {
+  background: #fff none repeat scroll 0 0;
+}
+
+/* line 382, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#services i {
+  background: none repeat scroll 0 0 #fff;
+  border-radius: 80px;
+  color: #6f9600;
+  display: block;
+  float: left;
+  font-size: 1.8em;
+  height: 80px;
+  line-height: 80px;
+  margin-right: 0.625em;
+  text-align: center;
+  width: 80px;
+}
+
+/* line 395, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.service-text {
+  display: table;
+  position: relative;
+}
+
+/* line 399, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#services h3 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 405, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#services p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+/* line 409, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#latest-news {
+  background: #f3f3f3 none repeat scroll 0 0;
+  box-shadow: 0px -10px 9px -11px rgba(0, 0, 0, 0.5);
+  padding: 6em 2em;
+  position: relative;
+  z-index: 3;
+}
+
+/* line 416, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.news-date {
+  background: #6f9600 none repeat scroll 0 0;
+  clear: both;
+  color: #fff;
+  display: block;
+  float: none;
+  height: 125px;
+  padding: 0.625em 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 427, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.day {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+/* line 431, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.month, .year {
+  font-size: 0.85em;
+}
+
+/* line 434, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.news-text {
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  height: 125px;
+  padding: 0.625em 1.25em;
+}
+
+/* line 442, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+.news-text p {
+  color: #777;
+  font-size: 0.85em;
+}
+
+/* line 446, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#contact {
+  background: none repeat scroll 0 0 #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  padding: 6em 2em;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 453, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#contact input, #contact textarea {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-radius: 3px;
+}
+
+/* line 457, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+form.customform button.color-btn {
+  height: auto;
+  margin-top: 0;
+}
+
+/* line 461, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#contact h2 {
+  margin: 0 0 1.25em;
+}
+
+/* line 464, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#contact h3 {
+  color: #668805;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0 0 0.625em;
+  text-transform: uppercase;
+}
+
+/* line 471, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#contact p {
+  font-size: 0.85em;
+  font-style: normal;
+  line-height: 2em;
+}
+
+/* line 476, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#contact p strong {
+  font-weight: 700;
+}
+
+/* line 479, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#contact i {
+  background: #e0e0e0 none repeat scroll 0 0;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  line-height: 26px;
+  margin: 0.625em;
+  text-align: center;
+  width: 26px;
+}
+
+/* line 489, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+ul.list-contact {
+  list-style-type: none;
+  display: inline;
+}
+
+/* line 493, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+#map-block {
+  filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+}
+
+/* line 499, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+footer {
+  background: none repeat scroll 0 0 #584302;
+  padding: 3.5em 0;
+}
+
+/* line 503, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+footer p, footer a:visited, footer a, footer a:hover {
+  color: #6c7c84;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 508, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+  header {
+    position: relative;
+  }
+
+  /* line 511, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+  .top-nav li a {
+    background: #05374e none repeat scroll 0 0;
+  }
+
+  /* line 514, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+  #carousel .text {
+    font-size: 0.8em;
+    top: 20%;
+  }
+
+  /* line 518, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+  .owl-controls.clickable {
+    display: none !important;
+  }
+
+  /* line 521, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+  .right {
+    float: none;
+  }
+
+  /* line 524, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+  .social.right {
+    float: right;
+  }
+
+  /* line 527, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+  #about-us article {
+    padding: 4em 2.5em;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 532, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+  #topbar {
+    line-height: 1.625em;
+    text-align: center;
+  }
+
+  /* line 536, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+  .social.right {
+    float: none;
+  }
+
+  /* line 539, c:/Sites/liwendemo/app/assets/stylesheets/template-style.scss */
+  p.logo, p.nav-text {
+    text-align: center;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
